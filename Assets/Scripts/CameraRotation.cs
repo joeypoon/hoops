@@ -15,8 +15,11 @@ public class CameraRotation : MonoBehaviour {
 
     void RotateCamera()
     {
-        float rotationSpeed = 2.0f;
+        float rotationSpeed = 5;
         float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
-        transform.rotation = transform.rotation * Quaternion.Euler(0, mouseX, 0);
+        float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
+        transform.localRotation = transform.localRotation * Quaternion.Euler(0, mouseX, 0);
+        Camera childCamera = GetComponentInChildren<Camera>();
+        childCamera.transform.localRotation = childCamera.transform.localRotation * Quaternion.Euler(-mouseY, 0, 0);
     }
 }
