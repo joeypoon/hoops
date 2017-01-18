@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallLauncher : MonoBehaviour {
     
-    public float ballSpeed = 7;
+    public float ballSpeed = 20;
     public GameObject ballPrefab;
 
 	// Use this for initialization
@@ -20,7 +20,8 @@ public class BallLauncher : MonoBehaviour {
     {
         if (Input.GetButtonUp("Fire1"))
         {
-            SpawnBall().velocity = Vector3.forward * ballSpeed;
+            Rigidbody ball = SpawnBall();
+            ball.velocity = transform.rotation * Vector3.forward * ballSpeed;
         }
     }
 
