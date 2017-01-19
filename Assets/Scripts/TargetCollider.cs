@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TargetCollider : MonoBehaviour {
 
+    public int points = 2;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,6 +18,6 @@ public class TargetCollider : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        FindObjectOfType<ScoreKeeper>().incrementScore();
+        FindObjectOfType<ScoreKeeper>().IncrementScore(points);
     }
 }

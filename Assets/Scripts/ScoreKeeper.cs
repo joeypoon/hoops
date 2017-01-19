@@ -16,9 +16,9 @@ public class ScoreKeeper : MonoBehaviour {
 		
 	}
 
-    public void incrementScore()
+    public void IncrementScore(int points)
     {
-        score++;
+        score = score + points;
         print("Your score is: " + score);
     }
 }
