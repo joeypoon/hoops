@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\BallLauncher.cs" />
     <Compile Include="Assets\Scripts\CameraRotation.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
     <Compile Include="Assets\Scripts\TargetCollider.cs" />
   </ItemGroup>
