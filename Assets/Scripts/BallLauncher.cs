@@ -16,7 +16,7 @@ public class BallLauncher : MonoBehaviour {
         ShootBall();
     }
 
-    void ShootBall()
+    private void ShootBall()
     {
         if (Input.GetButtonUp("Fire1"))
         {
@@ -25,7 +25,7 @@ public class BallLauncher : MonoBehaviour {
         }
     }
 
-    Rigidbody SpawnBall()
+    private Rigidbody SpawnBall()
     {
         Rigidbody ball = Instantiate(ballPrefab)
             .GetComponent<Rigidbody>();

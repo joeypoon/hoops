@@ -10,11 +10,15 @@ public class LevelManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyUp(KeyCode.Space))
+	void Update () { 
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            int currentBuildIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(1);
+            LoadScene(2);
         }
 	}
+
+    public void LoadScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
 }

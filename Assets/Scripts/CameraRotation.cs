@@ -13,7 +13,7 @@ public class CameraRotation : MonoBehaviour {
         RotateCamera();
 	}
 
-    void RotateCamera()
+    private void RotateCamera()
     {
         float rotationSpeed = 5;
         float mouseX = Input.GetAxis("Mouse X") * rotationSpeed;
