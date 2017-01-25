@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\ScoreAbsorber.cs" />
     <Compile Include="Assets\Scripts\ScoreDisplay.cs" />
     <Compile Include="Assets\Scripts\ScoreKeeper.cs" />
+    <Compile Include="Assets\Scripts\ScoreSound.cs" />
     <Compile Include="Assets\Scripts\TargetCollider.cs" />
     <Compile Include="Assets\Scripts\TimerDisplay.cs" />
   </ItemGroup>
