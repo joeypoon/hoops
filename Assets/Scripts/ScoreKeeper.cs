@@ -19,6 +19,5 @@ public class ScoreKeeper : MonoBehaviour {
     public void IncrementScore(int points)
     {
         score += points;
-        print("Your score is: " + score);
     }
 }
